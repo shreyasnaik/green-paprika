@@ -1,0 +1,61 @@
+---
+label: Config
+hide_body: true
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: textarea
+    name: description
+    label: Description
+    description: Text shown under the main logo
+  - type: text
+    name: base
+    label: Base
+    description: Base path under which the site will be served
+    default: /vuepress-theme-casper/
+  - type: field_group
+    name: themeConfig
+    label: Theme Config
+    fields:
+      - type: file
+        name: cover
+        label: Cover
+        description: Cover image shown on the home page
+      - type: file
+        name: logo
+        label: Logo
+        description: Logo image shown on the home page
+      - type: field_group_list
+        name: nav
+        label: Top Navigation Menu
+        fields:
+          - type: include
+            name: include_nav_item
+            label: Navigation Item
+            template: nav_item
+        config:
+          labelField: text
+      - type: field_group_list
+        name: footer
+        label: Bottom Navigation Menu
+        fields:
+          - type: include
+            name: include_nav_item
+            label: Navigation Item
+            template: nav_item
+        config:
+          labelField: text
+      - type: field_group
+        name: social
+        label: Social
+        fields:
+          - type: text
+            name: github
+            label: Github Link
+          - type: text
+            name: twitter
+            label: Twitter Link

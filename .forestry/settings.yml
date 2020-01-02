@@ -1,0 +1,36 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: blog/.vuepress/public/admin
+webhook_url: 'https://api.stackbit.com/project/5e0e7a68401e9e001b7fd835/webhook/forestry'
+sections:
+  - type: document
+    label: Config
+    path: blog/.vuepress/data/config.json
+    templates:
+      - config
+  - type: document
+    label: Home
+    path: blog/index.md
+    templates:
+      - home
+  - type: directory
+    path: blog
+    match: '**/*.md'
+    exclude: '{index.md,posts/**/*,.vuewpress/**/*,index.md}'
+    label: Page
+    create: all
+    templates:
+      - page
+  - type: directory
+    path: blog/posts
+    match: '**/*.md'
+    label: Post
+    create: all
+    templates:
+      - post
+upload_dir: blog/.vuepress/public/images
+public_path: /images
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ':filename:'

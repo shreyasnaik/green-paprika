@@ -1,0 +1,13 @@
+---
+label: Home
+hide_body: true
+is_partial: false
+fields:
+  - type: text
+    name: type
+    label: Type
+    hidden: true
+    default: home
+    config:
+      required: true
+pages: []
