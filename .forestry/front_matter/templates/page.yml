@@ -1,18 +1,18 @@
 ---
 label: Page
-is_partial: false
+hide_body: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    config:
-      required: true
-  - type: text
-    name: type
-    label: Type
-    hidden: true
-    default: page
-    config:
-      required: true
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: type
+  label: Type
+  hidden: true
+  default: page
+  config:
+    required: true
 pages:
-  - blog/about.md
+- blog/about.md

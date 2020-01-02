@@ -2,35 +2,41 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: blog/.vuepress/public/admin
-webhook_url: 'https://api.stackbit.com/project/5e0e7a68401e9e001b7fd835/webhook/forestry'
+webhook_url: https://api.stackbit.com/project/5e0e7a68401e9e001b7fd835/webhook/forestry
 sections:
-  - type: document
-    label: Config
-    path: blog/.vuepress/data/config.json
-    templates:
-      - config
-  - type: document
-    label: Home
-    path: blog/index.md
-    templates:
-      - home
-  - type: directory
-    path: blog
-    match: '**/*.md'
-    exclude: '{index.md,posts/**/*,.vuewpress/**/*,index.md}'
-    label: Page
-    create: all
-    templates:
-      - page
-  - type: directory
-    path: blog/posts
-    match: '**/*.md'
-    label: Post
-    create: all
-    templates:
-      - post
+- type: document
+  path: blog/.vuepress/data/config.json
+  label: Config
+  templates:
+  - config
+- type: document
+  path: blog/index.md
+  label: Home
+  templates:
+  - home
+- type: directory
+  path: blog
+  label: Page
+  create: all
+  match: "**/*.md"
+  exclude: "{index.md,posts/**/*,.vuewpress/**/*,index.md}"
+  templates:
+  - page
+- type: directory
+  path: blog/posts
+  label: Post
+  create: all
+  match: "**/*.md"
+  templates:
+  - post
 upload_dir: blog/.vuepress/public/images
-public_path: /images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ':filename:'
+file_template: ":filename:"
+build:
+  preview_output_directory: public
+  install_dependencies_command: npm install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  instant_preview_command: npm run forestry:preview

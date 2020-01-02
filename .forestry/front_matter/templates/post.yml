@@ -1,49 +1,49 @@
 ---
 label: Post
-is_partial: false
+hide_body: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    config:
-      required: true
-  - type: file
-    name: image
-    label: Image
-  - type: datetime
-    name: publish
-    label: Date
-    config:
-      required: true
-  - type: list
-    name: tags
-    label: Tags
-  - type: list
-    name: categories
-    label: categories
-    config:
-      source:
-        type: custom
-      options:
-        - dexter
-        - futurama
-      use_select: true
-  - type: text
-    name: readingTime
-    label: Reading Time
-  - type: text
-    name: type
-    label: Type
-    hidden: true
-    default: post
-    config:
-      required: true
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: file
+  name: image
+  label: Image
+- type: datetime
+  name: publish
+  label: Date
+  config:
+    required: true
+- type: list
+  name: tags
+  label: Tags
+- type: list
+  name: categories
+  label: categories
+  config:
+    source:
+      type: custom
+    options:
+    - dexter
+    - futurama
+    use_select: true
+- type: text
+  name: readingTime
+  label: Reading Time
+- type: text
+  name: type
+  label: Type
+  hidden: true
+  default: post
+  config:
+    required: true
 pages:
-  - blog/posts/dexter/i-am-the-doctor.md
-  - blog/posts/dexter/nobodys-taxi-service.md
-  - blog/posts/dexter/really-brilliant-ideas.md
-  - blog/posts/futurama/and-then-we-woke-up.md
-  - blog/posts/futurama/bender-cooking.md
-  - blog/posts/futurama/good-news-everybody.md
-  - blog/posts/futurama/leela-is-gonna-kill-me.md
-  - blog/posts/futurama/when-will-that-be.md
+- blog/posts/dexter/i-am-the-doctor.md
+- blog/posts/dexter/nobodys-taxi-service.md
+- blog/posts/dexter/really-brilliant-ideas.md
+- blog/posts/futurama/and-then-we-woke-up.md
+- blog/posts/futurama/bender-cooking.md
+- blog/posts/futurama/good-news-everybody.md
+- blog/posts/futurama/leela-is-gonna-kill-me.md
+- blog/posts/futurama/when-will-that-be.md

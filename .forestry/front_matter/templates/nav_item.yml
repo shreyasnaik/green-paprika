@@ -1,17 +1,16 @@
 ---
 label: Navigation Item
 hide_body: true
-is_partial: true
 display_field: text
 fields:
-  - type: text
-    name: text
-    label: Label
-    config:
-      required: true
-  - type: text
-    name: link
-    label: Link
-    description: 'Link of the navigation item, e.g.: /posts or https://facebook.com'
-    config:
-      required: true
+- type: text
+  name: text
+  label: Label
+  config:
+    required: true
+- type: text
+  name: link
+  label: Link
+  description: 'Link of the navigation item, e.g.: /posts or https://facebook.com'
+  config:
+    required: true
