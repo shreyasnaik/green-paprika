@@ -1,16 +1,16 @@
 ---
-title: 'And when we woke up, we had these bodies.'
-image: 'https://picsum.photos/1920/1080/?random&date=2018-04-15'
-publish: '2018-04-15'
+title: And when we woke up, we had these bodies.
+image: "/images/welcome.jpg"
+publish: 2018-04-15
 tags:
-  - toe-tappingly tragic
-  - thanks to the Internet
+- toe-tappingly tragic
+- thanks to the Internet
 categories:
-  - futurama
+- futurama
 readingTime: 10 Minutes
 type: post
----
 
+---
 Does anybody else feel jealous and aroused and worried? Oh dear! She's stuck in an infinite loop, and he's an idiot! Well, that's love for you. Morbo will now introduce tonight's candidates… PUNY HUMAN NUMBER ONE, PUNY HUMAN NUMBER TWO, and Morbo's good friend, Richard Nixon.
 
 <!-- more -->
